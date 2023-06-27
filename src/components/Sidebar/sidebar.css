@@ -1,0 +1,39 @@
+.navigationBar {
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+ul li {
+    margin: 20px auto 30px auto;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+ul li.active {
+    color: white;
+}
+
+ul li img {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+.bottombar {
+    position: absolute;
+    bottom: 5%;
+}

@@ -1,0 +1,17 @@
+.dashboard {
+    display: flex;
+    background-color: #F5F5F5;
+    height: 100vh;
+}
+
+.left {
+    width: 20%;
+    background-color: black;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.right {
+    width: 80%;
+    margin-top: 20px;
+}

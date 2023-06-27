@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25%;
+    padding: 20px;
+    margin: 20px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: #DDEFE0;
+}
+
+.card:nth-child(2) {
+    background-color: #F4ECDD;
+}
+
+.card:nth-child(3) {
+    background-color: #EFDADA;
+}
+
+.card:nth-child(4) {
+    background-color: #DEE0EF;
+}
+
+.card-header {
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.card-header img {
+    width: 24px;
+    height: 24px;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
