@@ -11,6 +11,7 @@ const Dashboard = () => {
         <Sidebar />
       </div>
       <div className="right">
+        <Header />
         <Card />
         <Chart />
       </div>
