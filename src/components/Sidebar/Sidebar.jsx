@@ -14,22 +14,22 @@ const Sidebar = () => {
       <div className="topbar">
         <ul>
           <li className="active">
-            <img src={DashboardIcon} /> Dashboard
+            <img src={DashboardIcon} alt="dashboard-icon" /> Dashboard
           </li>
           <li>
-            <img src={TransactionIcon} />
+            <img src={TransactionIcon} alt="transaction-icon" />
             Transactions
           </li>
           <li>
-            <img src={ScheduleIcon} />
+            <img src={ScheduleIcon} alt="schedule-icon" />
             Schedules
           </li>
           <li>
-            <img src={UserIcon} />
+            <img src={UserIcon} alt="user-icon" />
             Users
           </li>
           <li>
-            <img src={SettingsIcon} />
+            <img src={SettingsIcon} alt="setting-icon" />
             Settings
           </li>
         </ul>
