@@ -3,11 +3,12 @@ import Google from "../../images/google.svg";
 import Apple from "../../images/apple.svg";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import app from "../../firebase";
 
 const Login = () => {
   const navigate = useNavigate();
   const handleGoogleSignin = () => {
-    const auth = getAuth();
+    const auth = getAuth(app);
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider).then((res) => {
       const credential = GoogleAuthProvider.credentialFromResult(res);
