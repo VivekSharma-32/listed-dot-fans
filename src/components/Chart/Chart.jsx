@@ -107,7 +107,7 @@ const Chart = () => {
             series={series}
             type="line"
             width="1000"
-            height="212"
+            height="200"
           />
         </div>
       </div>
