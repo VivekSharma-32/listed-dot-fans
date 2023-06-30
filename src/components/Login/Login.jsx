@@ -8,15 +8,21 @@ import app from "../../firebase";
 const Login = () => {
   const navigate = useNavigate();
   const handleGoogleSignin = () => {
-    const auth = getAuth(app);
+    const auth = getAuth();
     const provider = new GoogleAuthProvider();
-    signInWithPopup(auth, provider).then((res) => {
-      const credential = GoogleAuthProvider.credentialFromResult(res);
-      console.log(credential);
-      const user = res.user;
-      localStorage.setItem("user", user);
-      navigate("/dashboard");
-    });
+    signInWithPopup(auth, provider)
+      .then((res) => {
+        const name = res.user.displayName;
+        const email = res.user.email;
+        const profilePic = res.user.photoURL;
+        localStorage.setItem("name", name);
+        localStorage.setItem("email", email);
+        localStorage.setItem("photo", profilePic);
+        navigate("/dashboard");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <div className="container" id="login">

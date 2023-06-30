@@ -1,8 +1,9 @@
 import "./header.css";
 import SearchIcon from "../../images/Search icon.svg";
 import NotificationIcon from "../../images/bell-icon.svg";
-import UserIcon from "../../images/Mask Group.svg";
+
 const Header = () => {
+  const photo = localStorage.getItem("photo");
   return (
     <div className="header">
       <div className="headerLogo">
@@ -21,7 +22,7 @@ const Header = () => {
           />
         </div>
         <div className="user">
-          <img className="icons user-icon" src={UserIcon} alt="user" />
+          <img className="icons user-icon" src={photo} alt="user" />
         </div>
       </div>
     </div>
